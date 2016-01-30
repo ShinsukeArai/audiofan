@@ -1,28 +1,52 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+★テーブル設計
+  usersテーブル
+    id
+    timestamp
+    name
+    component(複数)
+
+  reviewsテーブル
+    id
+    timestamp
+    text
+    user_id
+    product_id
+
+  productsテーブル
+    id
+    timestamp
+    name
+    maker_id
+    genre_id
+
+  makersテーブル
+    id
+    timestamp
+    name
+
+  genresテーブル
+    id
+    timestamp
+    name
+
+★ルーティング設計
+
+
+  home_c
+    index_a
+  products_c
+    show_a
+  reviews_c
+    create_a
+    destroy_a
+  users_c
+    show_a
+    edit_a
+    update_a
+
+
+
+
+
