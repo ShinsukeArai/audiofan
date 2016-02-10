@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :home, only: :index
+  devise_for :users
   resources :products, only: :show do
     resources :reviews, only: [:create, :destroy]
   end
