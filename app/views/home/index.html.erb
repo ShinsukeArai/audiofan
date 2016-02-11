@@ -1,41 +1,16 @@
-  <html>
-    <head>
-      <meta charset="UTF-8">
-      <title>AudioFan</title>
-      <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-      <div class="photo">
-        <img src="images/hd800.jpg" alt="top_photo">
-      </div>
+<div class="top_photo" style="background-image: url(<%= asset_path('hd800.jpg') %>)" alt='top_photo'>
+</div>
 
-      <div class="article">
-        <a href="要記入">
-          <div class="article_inner">
-            <div class="article_inner_left">
-              <img src=要記入>
-            </div>
-            <div class="article_inner_right">
-              <time class="article_time" datetime="投稿日時">投稿日時</time>
-            </div>
-            <h2 class="article_title">記事タイトル</h2>
-          </div>
-        </a>
+<div class="clearfix">
+  <a href="要記入">
+    <div class="article">
+      <div class="article_left">
+        <img src=要記入>
       </div>
-
-      <div class="article">
-        <a href="要記入">
-          <div class="article_inner">
-            <div class="article_inner_left">
-              <img src=要記入>
-            </div>
-            <div class="article_inner_right">
-              <time class="article_time" datetime="投稿日時">投稿日時</time>
-            </div>
-            <h2 class="article_title">記事タイトル</h2>
-          </div>
-        </a>
+      <div class="article_right">
+        <time class="article_time" datetime="投稿日時">投稿日時</time>
+        <h2 class="article_title">記事タイトル。記事説明。この記事はオーディオ製品にまつわる記事です。下にレビューなど追記することができます。</h2>
       </div>
-
-    </body>
-  </html>
+    </div>
+  </a>
+</div>

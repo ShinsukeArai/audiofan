@@ -1,3 +1,93 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$mainColor: red;
+
+.top_bar_left {
+  height: 80px;
+  width: 70%;
+  float: left;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  box-sizing: border-box;
+  a {
+    display: block;
+    height: 100%;
+    text-align: center;
+    line-height: 80px;
+  }
+}
+
+.top_bar_right {
+  height: 80px;
+  width: 30%;
+  float: right;
+  .right_left, .right_right {
+    box-sizing: border-box;
+    border-bottom: 1px solid #000;
+    height: 80px;
+    width: 50%;
+    a {
+      color: inherit;
+      font-size: 50px;
+      display: block;
+      height: 100%;
+      text-align: center;
+      line-height: 80px;
+      &:visited {
+        color: inherit;
+      }
+      &:hover {
+        background-color: #eeeeee;
+      }
+      &:active {
+        background-color: #eeeeee;
+        font-size: 60px;
+      }
+    }
+  }
+  .right_left {
+    float: left;
+    border-right: 1px solid #000;
+  }
+  .right_right {
+    float: right;
+  }
+}
+
+.top_photo {
+  height: 360px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+.article {
+  height: 300px;
+  width: 100%;
+}
+
+.article_left {
+  height: 300px;
+  width: 330px;
+  float: left;
+  margin: 30px 30px 30px;
+}
+
+.article_right {
+  height: 300px;
+  width: 100%;
+  float: right;
+  margin: 30px 30px 30px;
+}
+
+.article_time {
+  height: 30px;
+  width: 100%;
+  float: left;
+}
+
+.article_title {
+  height: 210px;
+}
+
+
+
