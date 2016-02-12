@@ -52,6 +52,10 @@ $mainColor: red;
   }
 }
 
+.copy_right {
+  text-align: center;
+}
+
 .top_photo {
   height: 360px;
   background-size: cover;
@@ -59,35 +63,42 @@ $mainColor: red;
   background-position: center center;
 }
 
-
 .article {
   height: 300px;
   width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  .article_left {
+    height: 300px;
+    width: 30%;
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .article_right {
+    height: 300px;
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+    .article_time {
+      height: 50px;
+      width: 100%;
+      font-size: 20px;
+      line-height: 50px;
+      color: #aaa;
+    }
+    .article_title {
+      height: 250px;
+      margin: 0;
+      font-size: 30px;
+      line-height: 62.5px;
+      color: #444;
+    }
+  }
 }
 
-.article_left {
-  height: 300px;
-  width: 330px;
-  float: left;
-  margin: 30px 30px 30px;
-}
-
-.article_right {
-  height: 300px;
-  width: 100%;
-  float: right;
-  margin: 30px 30px 30px;
-}
-
-.article_time {
-  height: 30px;
-  width: 100%;
-  float: left;
-}
-
-.article_title {
-  height: 210px;
-}
 
 
 
