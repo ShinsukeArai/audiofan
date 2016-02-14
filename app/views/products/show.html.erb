@@ -1,0 +1,36 @@
+
+<div class="item">
+  <div class="item_photo" style="background-image: url(<%= asset_path('hd650.jpg') %>)" alt='item_photo'>
+  </div>
+  <div class="title">
+    <h1>製品名</h1>
+  </div>
+  <div class="item_detail">
+    <h2>製品情報。メーカー名、ジャンル名、発売日時などの情報を記載します。</h2>
+  </div>
+</div>
+
+<div class="contents_row">
+  <%= form_tag('/tweets', method: :post) do %>
+    <h3>
+      投稿する
+    </h3>
+    <div class="input_name">
+      <input placeholder="Nickname" type="text" name="name">
+    </div>
+    <div class="input_text">
+      <textarea name="text" placeholder="text"></textarea>
+    </div>
+    <div class="sent_button">
+      <input type="submit" value="SENT">
+    </div>
+  <% end %>
+</div>
+
+<% @reviews.each do |review| %>
+  <div class="review clearfix">
+    <time class="review_time" datetime="投稿日時"><%= review.updated_at %></time>
+    <h2 class="review_text"><%= review.text %></h2>
+  </div>
+<% end %>
+
