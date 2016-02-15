@@ -7,23 +7,29 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header>
-    <div class="left_content">
-      <li>AudioFan</li>
+  <header class="clearfix">
+    <div class="top_bar_left">
+      <%= link_to image_tag('title.png'), root_path %>
     </div>
-    <div class="right_content">
+    <div class="top_bar_right">
       <div class="right_left">
-        <li>log_in</li>
+        <% if user_signed_in? %>
+          <a href="/user/<%= current_user.id %>"><i class="fa fa-user"></i></i></a>
+        <% else %>
+          <a href="/users/sign_in"><i class="fa fa-sign-in"></i></a>
+        <% end %>
       </div>
       <div class="right_right">
-        <li>MENU</li>
+        <a href="#"><i class="fa fa-bars"></i></a>
       </div>
     </div>
   </header>
-  <footer>
+
+  <%= yield %>
+
+<!--   <footer>
     <cmall class="copy_right">© 2016- AudioFan</cmall>
-  </footer>
-<%= yield %>
+  </footer> -->
 
 </body>
 </html>
