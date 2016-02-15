@@ -27,10 +27,9 @@
   <% end %>
 </div>
 
-<% @reviews.each do |review| %>
+<% @product.reviews.each do |review| %>
   <div class="review clearfix">
     <time class="review_time" datetime="投稿日時"><%= review.updated_at %></time>
     <h2 class="review_text"><%= review.text %></h2>
   </div>
 <% end %>
-
