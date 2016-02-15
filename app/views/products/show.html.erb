@@ -1,12 +1,16 @@
 
-<div class="item">
-  <div class="item_photo" style="background-image: url(<%= asset_path('hd650.jpg') %>)" alt='item_photo'>
+<div class="item_photo" style="background-image: url(<%= @product.photo %>)" alt='item_photo'>
+</div>
+
+<div class="item_details">
+  <div class="product_date">
+    <h4><%= @product.updated_at %></h4>
   </div>
-  <div class="title">
-    <h1>製品名</h1>
+  <div class="brand">
+    <h2><%= @product.brand.name %></h2>
   </div>
-  <div class="item_detail">
-    <h2>製品情報。メーカー名、ジャンル名、発売日時などの情報を記載します。</h2>
+  <div class="name_and_genre">
+    <h1><%= @product.name %> <%= @product.genre.name %></h1>
   </div>
 </div>
 
@@ -29,7 +33,7 @@
 
 <% @product.reviews.each do |review| %>
   <div class="review clearfix">
-    <time class="review_time" datetime="投稿日時"><%= review.updated_at %></time>
+    <time class="review_time" datetime="投稿日時">ユーザー名</time>
     <h2 class="review_text"><%= review.text %></h2>
   </div>
 <% end %>

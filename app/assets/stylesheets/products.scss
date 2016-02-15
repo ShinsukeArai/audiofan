@@ -1,3 +1,47 @@
+
+.item_photo {
+  height:  1000px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.item_details {
+  padding: 0px 30px;
+  box-sizing: border-box;
+
+  .updated_date {
+    color: #aaa;
+  }
+
+  .name_and_genre {
+    color: black;
+  }
+
+}
+
+.contents_row {
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+
+  .input_name {
+    width: 200px;
+  }
+  .input_text {
+    width: 400px;
+    height: 100px;
+  }
+
+}
+
+.review {
+  padding: 0px 30px;
+  box-sizing: border-box;
+}
+
+
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
