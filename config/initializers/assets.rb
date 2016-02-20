@@ -2,7 +2,10 @@
 
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
-
+Rails.application.config.assets.precompile += %w( room.jpg )
+Rails.application.config.assets.precompile += %w( sound.jpg )
+Rails.application.config.assets.precompile += %w( sound2.jpg )
+Rails.application.config.assets.precompile += %w( sound3.jpg )
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 

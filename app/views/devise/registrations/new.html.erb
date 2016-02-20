@@ -1,0 +1,28 @@
+<div class="contents row"><br>
+  <a class="registration">新規登録</a><br><br>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+
+  <label class="username">
+    <span class="icon icon-username"></span> ユーザー名
+  </label>
+
+  <input class="inputForm" id="user_username" name="user[name]" placeholder="英数字およびアンダーバーで入力" size="30" type="text"><br><br>
+
+  <label class="mail">
+    <span class="icon icon-mail"></span> メールアドレス
+  </label>
+
+  <input class="inputForm" id="user_email" name="user[email]" placeholder="有効なメールアドレスを入力" size="30" type="email" value=""><br><br>
+
+  <label class="password">
+    <span class="icon icon-password"></span> パスワード
+  </label>
+
+  <input class="inputForm" id="user_password" name="user[password]" placeholder="半角英数字混合で8文字以上" size="30" type="password"><br><br>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+  <% end %>
+</div>

@@ -2,28 +2,26 @@
 <div class="item_photo" style="background-image: url(<%= @product.photo %>)" alt='item_photo'>
 </div>
 
+<br><br>
+
 <div class="item_details">
-  <div class="product_date">
-    <h4><%= @product.updated_at %></h4>
-  </div>
   <div class="brand">
-    <h2><%= @product.brand.name %></h2>
-  </div>
+    <a><%= @product.brand.name %></a>
+  </div><br>
   <div class="name_and_genre">
-    <h1><%= @product.name %> <%= @product.genre.name %></h1>
+    <a><%= @product.name %> <%= @product.genre.name %></>
   </div>
 </div>
 
+<br><br><br>
+
 <div class="contents_row">
   <%= form_tag('/tweets', method: :post) do %>
-    <h3>
+    <a>
       投稿する
-    </h3>
-    <div class="input_name">
-      <input placeholder="Nickname" type="text" name="name">
-    </div>
+    </a>
     <div class="input_text">
-      <textarea name="text" placeholder="text"></textarea>
+      <textarea name="text" class="input" placeholder="text"></textarea>
     </div>
     <div class="sent_button">
       <input type="submit" value="SENT">
@@ -33,7 +31,7 @@
 
 <% @product.reviews.each do |review| %>
   <div class="review clearfix">
-    <time class="review_time" datetime="投稿日時">ユーザー名</time>
-    <h2 class="review_text"><%= review.text %></h2>
+    <time class="review_user"><%= review.user.name %></time><br>
+    <a class="review_text"><%= review.text %></a><br><br>
   </div>
 <% end %>

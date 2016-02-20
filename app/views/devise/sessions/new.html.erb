@@ -1,0 +1,21 @@
+
+<br>
+<div class="contents row">
+  <a class="log_in">ログイン</a>
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %><br>
+
+    <a class="email"></span>メールアドレス</a><br>
+    <input id="user_email" class="inputForm" name="user[email]" type="email" value="" placeholder="登録時に入力したメールアドレス"><br><br>
+
+    <a class="password">パスワード</a><br>
+    <input class="inputForm" id="user_password" name="user[password]" placeholder="登録時に入力したパスワード" size="30" type="password"><br><br>
+
+    <% if devise_mapping.rememberable? -%>
+      <div class="remember_me">Remember me</div>
+        <div class="remember_me_field"><%= f.check_box :remember_me %></div>
+    <% end -%>
+
+    <p><a href="#"><%= f.submit "Log_in", class: "log_in_button" %></a></p>
+  <% end %>
+</div>

@@ -1,8 +1,11 @@
+<div class="user_photo" style="background-image: url(<%= asset_path('room.jpg') %>)" alt='user_photo'>
+</div>
+
 <div class="clearfix">
   <div class="profile">
     <div class="profile_left">
-      <h1 class="user_name">ユーザー名：あらい</h1>
-      <h2 class="profile_text">プロフィール：ヘッドホンとかスピーカーとか好きです。割と幅広く所有しています。音楽のジャンルは特に好き嫌いないです。なんでも聴きます。所有機器：Avalon Acoustics Diamond。Spectral DMC-30S。Spectral DMA-360 Series 2。GOLDMUND EIDOS 36 2CH Reference</h2>
+      <a class="user_name">あらいの部屋</a><br>
+      <a class="profile_text">プロフィール：ヘッドホンとかスピーカーとか好きです。割と幅広く所有しています。音楽のジャンルは特に好き嫌いないです。なんでも聴きます。所有機器：Avalon Acoustics Diamond。Spectral DMC-30S。Spectral DMA-360 Series 2。GOLDMUND EIDOS 36 2CH Reference</a>
     </div>
     <div class="profile_right">
       <div class="edit">
@@ -15,12 +18,12 @@
 <%= link_to "sign_out", "/users/sign_out", method: :delete %>
 
 <% current_user.reviews.each do |review| %>
-  <div class="article clearfix">
-    <div class="article_left" style='background-image: url(<%= review.product.photo %>)' alt='sample'>
+  <div class="u_article clearfix">
+    <div class="u_article_left" style='background-image: url(<%= review.product.photo %>)' alt='sample'>
     </div>
-    <div class="article_right">
-      <time class="article_time" datetime="投稿日時"><%= review.updated_at %></time>
-      <h2 class="article_title"><%= review.text %></h2>
+    <div class="u_article_right">
+      <time class="u_article_time" datetime="投稿日時"><%= review.updated_at %></time><br>
+      <a class="u_article_title"><%= review.text %></a>
     </div>
   </div>
 <% end %>

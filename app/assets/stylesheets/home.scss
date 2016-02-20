@@ -1,7 +1,7 @@
 $mainColor: red;
 
 .top_bar_left {
-  height: 80px;
+  height: 40px;
   width: 70%;
   float: left;
   border-bottom: 1px solid #000;
@@ -11,26 +11,33 @@ $mainColor: red;
     display: block;
     height: 100%;
     text-align: center;
-    line-height: 80px;
+    line-height: 40px;
+    font-size: 35px;
+    color: black;
+    text-decoration: none;
   }
+  img {
+    height: 38px;
+  }
+
 }
 
 .top_bar_right {
-  height: 80px;
+  height: 40px;
   width: 30%;
   float: right;
   .right_left, .right_right {
     box-sizing: border-box;
     border-bottom: 1px solid #000;
-    height: 80px;
+    height: 40px;
     width: 50%;
     a {
       color: inherit;
-      font-size: 50px;
+      font-size: 25px;
       display: block;
       height: 100%;
       text-align: center;
-      line-height: 80px;
+      line-height: 40px;
       &:visited {
         color: inherit;
       }
@@ -39,7 +46,7 @@ $mainColor: red;
       }
       &:active {
         background-color: #eeeeee;
-        font-size: 60px;
+        font-size: 30px;
       }
     }
   }
@@ -57,19 +64,20 @@ $mainColor: red;
 }
 
 .top_photo {
-  height: 360px;
+  height: 188px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .article {
-  height: 300px;
+  height: 130px;
   width: 100%;
-  padding: 30px;
+  padding: 15px;
   box-sizing: border-box;
+  border-bottom: 1px solid #aaa;
   .article_left {
-    height: 300px;
+    height: 100px;
     width: 30%;
     float: left;
     background-size: cover;
@@ -77,28 +85,26 @@ $mainColor: red;
     background-position: center center;
   }
   .article_right {
-    height: 300px;
+    height: 100px;
     width: 70%;
     float: left;
-    padding-left: 20px;
+    padding-left: 10px;
     box-sizing: border-box;
     .article_time {
-      height: 50px;
+      height: 25px;
       width: 100%;
-      font-size: 20px;
-      line-height: 50px;
+      font-size: 10px;
+      line-height: 20px;
       color: #aaa;
     }
     .article_title {
-      height: 250px;
+      height: 90px;
       margin: 0;
-      font-size: 30px;
+      font-size: 15px;
       line-height: 62.5px;
-      color: #444;
+      color: #333;
     }
   }
 }
-
-
 
 

@@ -46,3 +46,7 @@ group :development do
 
 end
 gem 'devise'
+gem 'font-awesome-sass'
+gem 'mechanize'
+
+gem 'rmagick', require: 'RMagick'

@@ -1,13 +1,24 @@
 
+.user_photo {
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .profile {
   padding: 0px 30px;
   box-sizing: border-box;
 
   .user_name {
     color: #333;
+    font-size: 24px;
+    color: black;
   }
 
   .profile_text {
+    color: black;
+    font-size: 18px;
     color: black;
   }
 
@@ -17,43 +28,99 @@
 
 }
 
-.article {
-  height: 300px;
+.u_article {
+  height: 130px;
   width: 100%;
-  padding: 30px;
+  padding: 15px;
   box-sizing: border-box;
-  .article_left {
-    height: 300px;
+  border-bottom: 1px solid #aaa;
+  .u_article_left {
+    height: 100px;
     width: 30%;
     float: left;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
-  .article_right {
-    height: 300px;
+  .u_article_right {
+    height: 100px;
     width: 70%;
     float: left;
-    padding-left: 20px;
+    padding-left: 10px;
     box-sizing: border-box;
-    .article_time {
-      height: 50px;
+    .u_article_time {
+      height: 25px;
       width: 100%;
-      font-size: 20px;
-      line-height: 50px;
+      font-size: 10px;
+      line-height: 20px;
       color: #aaa;
     }
-    .article_title {
-      height: 250px;
+    .u_article_title {
+      height: 90px;
       margin: 0;
-      font-size: 30px;
+      font-size: 15px;
       line-height: 62.5px;
       color: #333;
     }
   }
 }
 
+.contents {
+  padding: 15px;
+  .log_in {
+    font-size: 24px;
+  }
+  .registration {
+    font-size: 24px;
+  }
 
+  .email_field, .password_field{
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+    input[type=email], input[type=password], input[type=text] {
+      -webkit-appearance: none;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      background: #fff;
+      font-size: 14px;
+      line-height: 22px;
+      -webkit-touch-callout: none;
+      -webkit-tap-highlight-color: transparent;
+  }
 
+.log_in_button {
 
+}
+
+  p a{
+    width:20%;
+    padding:10px;
+    background:#333;
+    color:#ffffff;
+    text-align:center;
+    display:block;
+    text-decoration:none;
+  }
+  p a:hover{
+    text-decoration:none;
+    background: #aaa;
+  }
+}
 

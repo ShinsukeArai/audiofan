@@ -2,37 +2,29 @@
 
 ★テーブル設計
   usersテーブル
-    id
-    timestamp
     name
-    component(複数)
+
+  componentテーブル
+    user_id
+    product_id
 
   reviewsテーブル
-    id
-    timestamp
     text
     user_id
     product_id
 
   productsテーブル
-    id
-    timestamp
     name
     maker_id
     genre_id
 
   makersテーブル
-    id
-    timestamp
     name
 
   genresテーブル
-    id
-    timestamp
     name
 
 ★ルーティング設計
-
 
   home_c
     index_a

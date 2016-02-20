@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
   <header class="clearfix">
@@ -14,7 +15,7 @@
     <div class="top_bar_right">
       <div class="right_left">
         <% if user_signed_in? %>
-          <a href="/user/<%= current_user.id %>"><i class="fa fa-user"></i></i></a>
+          <a href="/users/<%= current_user.id %>"><i class="fa fa-user"></i></i></a>
         <% else %>
           <a href="/users/sign_in"><i class="fa fa-sign-in"></i></a>
         <% end %>
